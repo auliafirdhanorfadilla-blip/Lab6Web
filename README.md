@@ -109,7 +109,7 @@ Membuat mini project yang berisi :
 - Gunakan addEventListener() untuk event input, change, click, atau submit.
 
 *index.html*
-```index.html```
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
