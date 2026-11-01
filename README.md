@@ -98,6 +98,8 @@ Membuat aplikasi kecil untuk menambahkan tugas dan menandai tugas selesai.
 *script.js*
 ![Gambar 18](ss/js6.png)
 
+![Gambar 21](ss/output6.png)
+
 
 
 >[!IMPORTANT]
