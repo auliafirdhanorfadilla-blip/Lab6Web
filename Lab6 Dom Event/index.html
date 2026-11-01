@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum DOM & Event</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Practice</h1>
+        <p>Praktikum DOM & Event Handling</p>
+    </header>
+
+    <main class="container">
+
+        <!-- LATIHAN 1 -->
+        <section class="card">
+            <span class="nomor">LATIHAN 01</span>
+            <h2>Mengubah Teks DOM</h2>
+            <h3 id="judul">Latihan DOM</h3>
+            <p id="pesan">Belum ada perubahan teks.</p>
+        </section>
+
+        <!-- LATIHAN 2 -->
+        <section class="card">
+            <span class="nomor">LATIHAN 02</span>
+            <h2>Event Click</h2>
+            <p id="pesanKlik">Silakan tekan tombol di bawah.</p>
+            <button id="tombolAksi" type="button">
+                Klik Saya
+            </button>
+        </section>
+
+        <!-- LATIHAN 3 -->
+        <section class="card">
+            <span class="nomor">LATIHAN 03</span>
+            <h2>Mengubah Gaya CSS</h2>
+            <p id="teksGaya">
+                JavaScript membuat tampilan website lebih menarik.
+            </p>
+            <button id="tombolGaya" type="button">
+                Ubah Tampilan
+            </button>
+        </section>
+
+        <!-- LATIHAN 4 -->
+        <section class="card">
+            <span class="nomor">LATIHAN 04</span>
+            <h2>Penghitung Karakter</h2>
+            <label for="namaInput">Masukkan Nama:</label>
+            <input type="text" id="namaInput" maxlength="40"
+                placeholder="Ketik nama di sini...">
+            <p>Jumlah karakter: <strong id="jumlahKarakter">0</strong></p>
+        </section>
+
+        <!-- LATIHAN 5 -->
+        <section class="card">
+            <span class="nomor">LATIHAN 05</span>
+            <h2>Validasi Form Pendaftaran</h2>
+
+            <form id="formPendaftaran" novalidate>
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" placeholder="Nama lengkap">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email aktif">
+
+                <label for="usia">Usia</label>
+                <input type="number" id="usia" placeholder="Usia 17-100">
+
+                <button type="submit">Daftar</button>
+            </form>
+
+            <p id="pesanForm" aria-live="polite"></p>
+        </section>
+
+        <!-- LATIHAN 6 -->
+        <section class="card">
+            <span class="nomor">LATIHAN 06</span>
+            <h2>Daftar Tugas (To-do List)</h2>
+
+            <label for="inputTugas">Tugas Baru</label>
+            <input type="text" id="inputTugas"
+                placeholder="Masukkan tugas...">
+
+            <button id="tambahTugas" type="button">Tambah Tugas</button>
+
+            <p id="pesanTugas" aria-live="polite"></p>
+            <ul id="daftarTugas"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 | Praktikum Pemrograman Web</p>
+    </footer>
+
+
+</body>
+</html>

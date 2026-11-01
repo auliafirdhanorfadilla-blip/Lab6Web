@@ -1,0 +1,219 @@
+.highlight {
+    color: #173f75;
+    background-color: #e6f1ff;
+    border-left: 4px solid #3478c8;
+    padding: 12px;
+}
+.teks-besar { font-size: 1.4rem; }
+
+.selesai span { text-decoration: line-through; color: #687386; }
+li { margin-bottom: 8px; }
+
+.btn-reset {
+  background: #e2e8f0;
+  color: #334155;
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  .form-card {
+    padding: 22px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f2fa;
+    color: #302b40;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(120deg, #6551a5, #927bd0);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #eee9ff;
+    font-size: 14px;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 1px solid #e9e4f5;
+    box-shadow: 0 4px 15px rgba(60, 40, 100, 0.06);
+}
+
+.nomor {
+    display: inline-block;
+    background: #eee9fb;
+    color: #7057ae;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.card h2 {
+    font-size: 19px;
+    margin: 15px 0;
+}
+
+.card h3 {
+    color: #765bb8;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: #686477;
+}
+
+/* INPUT */
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 14px 0 7px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd8eb;
+    border-radius: 8px;
+    outline: none;
+    font-size: 13px;
+}
+
+input:focus {
+    border-color: #8065bd;
+    box-shadow: 0 0 0 3px #8065bd18;
+}
+
+/* BUTTON */
+button {
+    background-color: #765bb8;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #59418f;
+}
+
+/* LATIHAN 3 */
+.highlight {
+    background-color: #eee9fb;
+    color: #59418f;
+    border-left: 4px solid #8065bd;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.teks-besar {
+    font-size: 1.4rem !important;
+}
+
+/* LATIHAN 5 */
+#pesanForm {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.berhasil {
+    color: green !important;
+}
+
+.gagal {
+    color: #dc3545 !important;
+}
+
+/* LATIHAN 6 */
+#daftarTugas {
+    padding-left: 22px;
+    margin-top: 15px;
+}
+
+#daftarTugas li {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+#daftarTugas button {
+    margin-left: 10px;
+    padding: 7px 10px;
+    font-size: 11px;
+}
+
+.selesai {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #898397;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
