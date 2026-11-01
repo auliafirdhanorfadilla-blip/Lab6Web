@@ -7,10 +7,10 @@ DOM adalah **denah/blueprint** yang bisa dibaca oleh JavaScript.
 
 **Manfaat utama DOM :** agar website lebih hidup, tidak perlu reload halaman.
 
-*index.html*
+*index.html*\.
 ![Gambar 1](ss/ss1.png)
 
-*script.js*
+*script.js*\.
 ![Gambar 2](ss/js1.png)
 Mengapa memakai textContent bukan innerHTML?
 - `textContent` = (isi sebagai teks polos) itu menulis teks apa adanya. Jika user mengetik sesuatu,
@@ -22,11 +22,11 @@ akan tampil tulisan yang sama persis
 ### 2. Event Click
 Menampilkan waktu saat tombol diklik.
 
-*index.html*
+*index.html*\.
 ![Gambar 4](ss/ss2.png)
 
-*script.js*
-![Gambar 5](ss/j2.png)
+*script.js*\.
+![Gambar 5](ss/js2.png)
 - `addEventListener` = berfungsi untuk membuat event (click, change) dan menjalankan fungsi (callback)
 - `submit` = saat form dikirim
 - `input` = saat user mengetik di input
@@ -37,13 +37,13 @@ Menampilkan waktu saat tombol diklik.
 ### 3. Mengubah Gaya CSS
 Mengganti tampilan tanpa ubah file CSS.
 
-*index.html*
+*index.html*\.
 ![Gambar 7](ss/ss3.png)
 
-*style.css*
+*style.css*\.
 ![Gambar 8](ss/css3.png)
 
-*script.js*
+*script.js*\.
 ![Gambar 9](ss/js3.png)
 - `classList.add("highlight")` -> Selalu tambah
 - `classList.remove("highlight")` -> Selalu hapus
@@ -54,11 +54,11 @@ Mengganti tampilan tanpa ubah file CSS.
 ### 4. Event input dan penghitung karakter
 Membuat input teks dan indikator jumlah karakter yang diperbarui saat pengguna mengetik. 
 
-*index.html*
+*index.html*\.
 ![Gambar 11](ss/ss4.png)
 - Event `input` lebih cepat dari `change.input` deteksi tiap ketikan, `change` menunggu user selesai & klik luar.
 
-*script.js*
+*script.js*\.
 ![Gambar 12](ss/js4.png)
 
 ![Gambar 13](ss/output4.png)
@@ -66,13 +66,13 @@ Membuat input teks dan indikator jumlah karakter yang diperbarui saat pengguna m
 ### 5. Validasi Form
 Membuat form nama, email, dan usia.
 
-*index.html*
+*index.html*\.
 ![Gambar 14](ss/ss5.png)
 - `novalidate` = artinya "Matikan validasi bawaan browser". Karena kita mau bikin validasi kita sendiri pakai JS.
 - `id="pesanForm"` = tempat untuk menampilkan pesan error/sukses.
 - `aria-live="polite"` = jika ada screen raeder, dia akan bacakan pesan errornya.
 
-*script.js*
+*script.js*\.
 ![Gambar 15](ss/js5.png)
 - `event.preventDefault` = kalau kita klik tombol `type=submit`, browser akan langsung reload halaman & kirim data.
 Tanpa ini, validasi tidak akan pernah terlihat.
@@ -83,14 +83,14 @@ Tanpa ini, validasi tidak akan pernah terlihat.
 ### 6. Daftar tugas sederhana (To-do List)
 Membuat aplikasi kecil untuk menambahkan tugas dan menandai tugas selesai.
 
-*index.html*
+*index.html*\.
 ![Gambar 16](ss/ss6.png)
 - `<p id ="pesanTugas">` = tempat pesan "Tulis tugas dulu" atau "Tugas ditambahkan"
 - `<ul id="daftarTugas"></ul>` = wadah kosong. nanti semua tugas `<li>` akan dimasukkan ke sini oleh JavaScript.
 
-*style.css*
+*style.css*\.
 ![Gambar 17](ss/css6.png)
 - User klik "Tanda Selesai" -> (CSS) `.selesai span { text-decoration: line-through }` aktif -> tulisan kecoret
 
-*script.js*
+*script.js*\.
 ![Gambar 18](ss/js6.png)
