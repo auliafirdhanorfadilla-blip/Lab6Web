@@ -98,7 +98,7 @@ Membuat aplikasi kecil untuk menambahkan tugas dan menandai tugas selesai.
 
 
 
-
+[!IMPORTANT]
 # Mini Project - Form Workshop
 Membuat mini project yang berisi :
 - Validasi nama, email, dan pilihan sesi.
@@ -300,4 +300,168 @@ form.addEventListener("reset", function() {
   // Menunggu nilai input kembali kosong
   setTimeout(updateRingkasan, 0);
 });
+```
+
+*style.css*
+```css
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ede9fe, #f8fafc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+}
+
+.form-card {
+  background: white;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.tag {
+  background: #ede9fe;
+  color: #6d28d9;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #4c1d95;
+  margin: 20px 0 10px;
+}
+
+.header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+input, select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 14px;
+  background: white;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #7c3aed;
+}
+
+small {
+  display: block;
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 12px;
+}
+
+.ringkasan {
+  background: #f5f3ff;
+  padding: 18px;
+  border-radius: 12px;
+  margin: 24px 0;
+}
+
+.ringkasan h3 {
+  color: #5b21b6;
+  margin-top: 0;
+}
+
+.ringkasan p {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+#pesan {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#pesan.sukses {
+  color: #15803d;
+}
+
+#pesan.gagal {
+  color: #dc2626;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-daftar {
+  background: #7c3aed;
+  color: white;
+  flex: 2;
+}
+
+.btn-daftar:hover {
+  background: #5b21b6;
+}
+
+.btn-reset {
+  background: #e2e8f0;
+  color: #334155;
+  flex: 1;
+}
+
+@media (max-width: 480px) {
+  .form-card {
+    padding: 22px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
 ```
